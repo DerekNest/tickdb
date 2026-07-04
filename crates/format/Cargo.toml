@@ -1,0 +1,19 @@
+[package]
+name = "format"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+crc32fast.workspace = true
+zstd.workspace = true
+serde.workspace = true
+
+[dev-dependencies]
+proptest.workspace = true
+criterion.workspace = true
+rand.workspace = true
+
+[[bench]]
+name = "encoders"
+harness = false

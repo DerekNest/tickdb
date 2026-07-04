@@ -1,0 +1,36 @@
+[package]
+name = "fuzz"
+version = "0.0.0"
+publish = false
+edition = "2021"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+format = { path = "../crates/format" }
+
+[[bin]]
+name = "fuzz_varint"
+path = "fuzz_targets/fuzz_varint.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_dod"
+path = "fuzz_targets/fuzz_dod.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_dz"
+path = "fuzz_targets/fuzz_dz.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_rle"
+path = "fuzz_targets/fuzz_rle.rs"
+test = false
+doc = false

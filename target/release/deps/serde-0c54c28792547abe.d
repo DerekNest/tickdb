@@ -1,0 +1,14 @@
+/Users/dereknester/Documents/tickdb2/target/release/deps/serde-0c54c28792547abe.d: /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/dereknester/Documents/tickdb2/target/release/build/serde-e74ac55db180ef6a/out/private.rs
+
+/Users/dereknester/Documents/tickdb2/target/release/deps/libserde-0c54c28792547abe.rlib: /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/dereknester/Documents/tickdb2/target/release/build/serde-e74ac55db180ef6a/out/private.rs
+
+/Users/dereknester/Documents/tickdb2/target/release/deps/libserde-0c54c28792547abe.rmeta: /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /Users/dereknester/Documents/tickdb2/target/release/build/serde-e74ac55db180ef6a/out/private.rs
+
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/Users/dereknester/Documents/tickdb2/target/release/build/serde-e74ac55db180ef6a/out/private.rs:
+
+# env-dep:OUT_DIR=/Users/dereknester/Documents/tickdb2/target/release/build/serde-e74ac55db180ef6a/out

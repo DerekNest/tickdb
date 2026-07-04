@@ -1,0 +1,11 @@
+/Users/dereknester/Documents/tickdb2/target/debug/deps/arrow_ord-dc76a6b64781f68d.d: /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/lib.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/cmp.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/comparison.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/ord.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/partition.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/rank.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/sort.rs
+
+/Users/dereknester/Documents/tickdb2/target/debug/deps/libarrow_ord-dc76a6b64781f68d.rmeta: /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/lib.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/cmp.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/comparison.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/ord.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/partition.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/rank.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/sort.rs
+
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/lib.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/cmp.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/comparison.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/ord.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/partition.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/rank.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/arrow-ord-52.2.0/src/sort.rs:

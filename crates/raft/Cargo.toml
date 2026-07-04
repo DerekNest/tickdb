@@ -1,0 +1,9 @@
+[package]
+name = "raft"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+thiserror.workspace = true
+rand = { version = "0.8", features = ["small_rng"] }
+serde.workspace = true

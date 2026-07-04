@@ -1,0 +1,20 @@
+[package]
+name = "cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "tickdb"
+path = "src/main.rs"
+
+[dependencies]
+format  = { path = "../format" }
+storage = { path = "../storage" }
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+
+# clap pinned below 4.6 to stay compatible with rust 1.75 in this env
+clap = { version = "=4.5.37", features = ["derive"] }

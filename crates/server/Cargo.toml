@@ -1,0 +1,32 @@
+[package]
+name = "server"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+name = "server"
+path = "src/lib.rs"
+
+[[bin]]
+name = "tickdb-server"
+path = "src/main.rs"
+
+[dependencies]
+format  = { path = "../format" }
+storage = { path = "../storage" }
+query   = { path = "../query" }
+raft    = { path = "../raft" }
+thiserror.workspace = true
+tokio.workspace = true
+axum.workspace = true
+arrow.workspace = true
+arrow-ipc.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+clap = { version = "=4.5.37", features = ["derive"] }
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"

@@ -1,0 +1,9 @@
+[package]
+name = "sim"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+raft = { path = "../raft" }
+thiserror.workspace = true
+rand = { version = "0.8", features = ["small_rng"] }

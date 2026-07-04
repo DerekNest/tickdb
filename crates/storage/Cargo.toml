@@ -1,0 +1,17 @@
+[package]
+name = "storage"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+format    = { path = "../format" }
+thiserror.workspace = true
+crc32fast.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+memmap2.workspace = true
+zstd.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+rand.workspace = true

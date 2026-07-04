@@ -1,0 +1,27 @@
+# Standalone benchmark crate, deliberately NOT a member of the main
+# workspace — it exists purely to measure tickdb's query-kernel latency
+# in-process for bench/run_benchmarks.sh's comparison against DuckDB.
+[package]
+name = "tickdb_bench_rs"
+version = "0.1.0"
+edition = "2021"
+
+# Prevents cargo from treating this as a nested member of the parent
+# workspace at ../../Cargo.toml — it has its own independent lockfile.
+[workspace]
+
+[dependencies]
+storage = { path = "../../crates/storage" }
+query   = { path = "../../crates/query" }
+format  = { path = "../../crates/format" }
+
+[[bin]]
+name = "query_only"
+path = "src/query_only.rs"
+
+[profile.release]
+opt-level = 3
+
+[[bin]]
+name = "asof_bench"
+path = "src/asof_bench.rs"

@@ -1,0 +1,82 @@
+# 3-node tickdb cluster for the chaos test (bench/chaos_demo.sh).
+#
+# Each node listens on two ports inside the container: 8080 for HTTP
+# (query/ingest) and 9000 for Raft consensus traffic. Peers address each
+# other by Docker's internal service-name DNS (e.g. "node1:9000") rather
+# than by IP, since compose assigns container IPs dynamically.
+#
+# Host ports are offset by node index (18080/19000, 18081/19001,
+# 18082/19002) so the chaos script and a human with curl can reach any
+# node directly from outside the compose network.
+#
+# NOTE: not verified with a real `docker compose up` in the environment
+# that wrote this — see the Dockerfile's note. The flags below match the
+# real `tickdb-server --help` surface exactly (confirmed by a live 3-process
+# run outside Docker), but the container networking itself needs a first
+# real run on your machine to confirm.
+
+version: "3.8"
+
+services:
+  node0:
+    build: .
+    hostname: node0
+    command:
+      - --data-dir=/data
+      - --port=8080
+      - --node-id=0
+      - --raft-bind=0.0.0.0:9000
+      - --peers=1=node1:9000,2=node2:9000
+      - --fsync=every-n-ms
+    ports:
+      - "18080:8080"
+      - "19000:9000"
+    volumes:
+      - node0-data:/data
+    networks:
+      - tickdb-net
+
+  node1:
+    build: .
+    hostname: node1
+    command:
+      - --data-dir=/data
+      - --port=8080
+      - --node-id=1
+      - --raft-bind=0.0.0.0:9000
+      - --peers=0=node0:9000,2=node2:9000
+      - --fsync=every-n-ms
+    ports:
+      - "18081:8080"
+      - "19001:9000"
+    volumes:
+      - node1-data:/data
+    networks:
+      - tickdb-net
+
+  node2:
+    build: .
+    hostname: node2
+    command:
+      - --data-dir=/data
+      - --port=8080
+      - --node-id=2
+      - --raft-bind=0.0.0.0:9000
+      - --peers=0=node0:9000,1=node1:9000
+      - --fsync=every-n-ms
+    ports:
+      - "18082:8080"
+      - "19002:9000"
+    volumes:
+      - node2-data:/data
+    networks:
+      - tickdb-net
+
+volumes:
+  node0-data:
+  node1-data:
+  node2-data:
+
+networks:
+  tickdb-net:
+    driver: bridge

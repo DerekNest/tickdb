@@ -1,0 +1,11 @@
+/Users/dereknester/Documents/tickdb2/target/debug/deps/rusty_fork-b49197887fdc9726.d: /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/lib.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/sugar.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/fork_test.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/error.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/cmdline.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/fork.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/child_wrapper.rs
+
+/Users/dereknester/Documents/tickdb2/target/debug/deps/librusty_fork-b49197887fdc9726.rmeta: /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/lib.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/sugar.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/fork_test.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/error.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/cmdline.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/fork.rs /Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/child_wrapper.rs
+
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/lib.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/sugar.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/fork_test.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/error.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/cmdline.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/fork.rs:
+/Users/dereknester/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rusty-fork-0.3.0/src/child_wrapper.rs:

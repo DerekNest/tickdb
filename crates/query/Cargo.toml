@@ -1,0 +1,13 @@
+[package]
+name = "query"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+format  = { path = "../format" }
+storage = { path = "../storage" }
+thiserror.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+rand = { version = "0.8", features = ["small_rng"] }

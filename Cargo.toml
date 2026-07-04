@@ -1,0 +1,49 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/format",
+    "crates/storage",
+    "crates/query",
+    "crates/raft",
+    "crates/sim",
+    "crates/server",
+    "crates/cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+
+[workspace.dependencies]
+# async
+tokio        = { version = "1", features = ["full"] }
+axum         = { version = "0.7" }
+# arrow
+arrow        = { version = "52" }
+arrow-ipc    = { version = "52" }
+# checksums / hashing
+crc32fast    = "1"
+twox-hash    = "1"
+# mmap
+memmap2      = "0.9"
+# compression
+zstd         = "0.13"
+# errors / serde / cli
+thiserror    = "1"
+serde        = { version = "1", features = ["derive"] }
+serde_json   = "1"
+## tracing
+tracing            = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+# testing / fuzzing / bench
+proptest   = "1"
+criterion  = { version = "0.5", features = ["html_reports"] }
+rand       = "0.8"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+
+[profile.bench]
+inherits = "release"
