@@ -115,9 +115,12 @@ This is a systems-engineering portfolio piece: the goal was to build
 something with real depth in storage formats, crash recovery, query
 vectorization, and distributed consensus — not to out-perform DuckDB or
 compete with a production time-series database. `docs/BENCHMARKS.md` is
-explicit about where tickdb wins (compactness, a hand-tuned OHLCV kernel),
-where a mature vectorized engine like DuckDB clearly wins (simple
-full-table aggregates), and where the implementation misses its own
-originally-stated targets (OHLCV and as-of join throughput, by roughly
-11x and 2x respectively) — reported as measured, not adjusted to flatter
+explicit about where tickdb wins (compactness only — roughly 20% smaller
+than Zstd-compressed Parquet), where a mature vectorized engine like
+DuckDB clearly wins (every benchmarked query shape, including the
+hand-tuned OHLCV kernel, by margins ranging from ~1.5x to over 100x
+depending on the query), and where the implementation misses its own
+originally-stated targets (OHLCV throughput by roughly 6.3-6.6x). As-of
+join throughput was never benchmarked against DuckDB, so no comparison
+is claimed either way — reported as measured, not adjusted to flatter
 the result.
