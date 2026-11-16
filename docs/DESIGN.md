@@ -199,10 +199,13 @@ node's independent storage engine, and a follower correctly redirects.
 ## Phase 4 — Benchmarks (milestone 10)
 
 See `docs/BENCHMARKS.md` for the full methodology and results. Summary:
-tickdb is ~20% more compact than Zstd-compressed Parquet and ~3x faster on
-OHLCV bar aggregation (the kernel it's hand-tuned for); DuckDB and Polars
-are 3–4x faster on VWAP and Top-N (simple full-table aggregates, exactly
+tickdb is ~20% more compact than Zstd-compressed Parquet, and that is its
+only win. DuckDB is faster on every benchmarked query shape: roughly
+1.5–1.6x on OHLCV bar aggregation (the kernel tickdb is hand-tuned for),
+18–22x on VWAP and 9–17x on Top-N (simple full-table aggregates, exactly
 where a mature vectorized execution engine is expected to dominate a
-hand-written scalar kernel). Numbers are on 2M-row synthetic data — real
+hand-written scalar kernel). An earlier version of this summary said
+tickdb was ~3x faster on OHLCV; that result could not be reproduced and
+is retracted in `docs/BENCHMARKS.md`. Numbers are on 2M-row synthetic data — real
 Binance data (`bench/download.sh`) is the remaining step for final numbers,
 not reachable from the sandboxed environment that built this project.
