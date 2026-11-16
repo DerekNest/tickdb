@@ -76,7 +76,7 @@ async fn spawn_cluster(n: usize) -> Vec<TestNode> {
         let mut peer_addrs = HashMap::new();
         for (j, &addr) in addrs.iter().enumerate() {
             if j != i {
-                peer_addrs.insert(j as u32, addr);
+                peer_addrs.insert(j as u32, addr.to_string());
             }
         }
 
