@@ -118,7 +118,7 @@ compete with a production time-series database. `docs/BENCHMARKS.md` is
 explicit about where tickdb wins (compactness only — roughly 20% smaller
 than Zstd-compressed Parquet), where a mature vectorized engine like
 DuckDB clearly wins (every benchmarked query shape, including the
-hand-tuned OHLCV kernel, by margins ranging from ~1.5x to over 100x
+hand-tuned OHLCV kernel, by margins ranging from ~1.5x to ~22x
 depending on the query), and where the implementation misses its own
 originally-stated targets (OHLCV throughput by roughly 6.3-6.6x). As-of
 join throughput was never benchmarked against DuckDB, so no comparison

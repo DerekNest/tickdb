@@ -16,8 +16,8 @@
 
 **ohlcv**: duckdb wins by roughly 1.5–1.6x. an earlier internal run reported tickdb as ~3x faster here; that result could not be reproduced on two separate reruns of the same 2m-row synthetic dataset and is considered stale or incorrect. the current sparse `btreemap`-based bucket accumulation in `crates/query/src/agg.rs` trades a per-row tree insert for bounded memory on unbounded ranges — a deliberate correctness fix after an earlier dense-array version caused a catastrophic allocation on `range(i64::min, i64::max)` queries. that fix likely explains why the earlier number can't be reproduced: the code as it stands today is not duckdb's equal on raw ohlcv throughput.
 
-**vwap**: duckdb wins by roughly 190–240x depending on the run. polars also beats tickdb, though polars' own number was unstable across runs (0.0125s vs 0.0469s), so treat that column as noisier than the others.
+**vwap**: duckdb wins by roughly 18–22x depending on the run. polars also beats tickdb, though polars' own number was unstable across runs (0.0125s vs 0.0469s), so treat that column as noisier than the others.
 
-**top-10**: duckdb wins by roughly 55–115x depending on the run.
+**top-10**: duckdb wins by roughly 9–17x depending on the run.
 
 **overall honest picture**: duckdb's vectorized execution engine beats tickdb on all three benchmarked query shapes. tickdb's genuine advantages in this project are storage compactness and the from-scratch raft consensus layer with deterministic simulation testing — not out-executing a mature, SIMD-tuned execution engine on general aggregates it's specifically built for.
