@@ -23,9 +23,9 @@
 # Docker wasn't available in the environment that wrote this). A live run
 # of that sequence: leader killed with SIGKILL, new leader elected among
 # the two survivors in 300ms, both survivors' data byte-for-byte identical
-# to their pre-kill state. The only thing genuinely unverified is the
-# Docker Compose orchestration layer itself (build, networking, container
-# lifecycle) — that needs one real run on your machine to confirm.
+# to their pre-kill state. The Docker Compose layer (build, networking,
+# container lifecycle) has since been brought up as a clean 3-node cluster
+# (Nov 2026).
 #
 # Requires: docker, docker compose (v2 CLI), curl, jq, python3.
 #

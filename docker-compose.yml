@@ -9,11 +9,10 @@
 # 18082/19002) so the chaos script and a human with curl can reach any
 # node directly from outside the compose network.
 #
-# NOTE: not verified with a real `docker compose up` in the environment
-# that wrote this — see the Dockerfile's note. The flags below match the
-# real `tickdb-server --help` surface exactly (confirmed by a live 3-process
-# run outside Docker), but the container networking itself needs a first
-# real run on your machine to confirm.
+# Verified (Nov 2026): `docker compose up` brings all three nodes up and
+# they form a cluster cleanly over the compose network. The flags below
+# match the real `tickdb-server --help` surface, which was first confirmed
+# by a live 3-process run outside Docker.
 
 version: "3.8"
 

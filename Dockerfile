@@ -4,11 +4,9 @@
 # then only the binary (not the toolchain, not the source tree) ships in
 # the final image.
 #
-# NOTE: this Dockerfile has not been built/run in the environment that
-# produced it (no docker available there) — it's written to match the CLI
-# surface verified live against the real `tickdb-server` binary (see
-# docs/DESIGN.md's Phase 3 section), but should be treated as a first
-# draft until you've run `docker compose build` yourself.
+# Verified (Nov 2026): builds and runs as the three nodes in
+# docker-compose.yml. It matches the CLI surface verified live against the
+# real `tickdb-server` binary (see docs/DESIGN.md's Phase 3 section).
 
 FROM rust:1.96-bookworm AS builder
 

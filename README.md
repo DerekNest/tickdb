@@ -26,7 +26,8 @@ use.
 - **HTTP + real TCP transport** (`crates/server`): axum HTTP API with
   Arrow IPC streaming responses, and a real multi-node Raft transport
   (chunked snapshot transfer, TCP framing) verified against a genuine
-  3-process cluster on localhost — not just the simulator.
+  3-process cluster on localhost and a 3-node Docker Compose cluster —
+  not just the simulator.
 
 ## Architecture
 
